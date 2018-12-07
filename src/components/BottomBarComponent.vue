@@ -19,7 +19,7 @@ export default {
   name: "bottom-bar",
   data () {
     return {
-
+      playerShowing: false
     }
   },
 
@@ -29,13 +29,19 @@ export default {
         case "home-btn":
           break;
         case "car-btn":
-          alert("TEST");
           break;
         case "phone-btn":
           break;
         case "temp-btn":
           break;
         case "music-btn":
+          if(this.playerShowing){
+            document.getElementById("music-player").style.visibility = "hidden";
+            this.playerShowing = false;
+          } else{
+            document.getElementById("music-player").style.visibility = "visible";
+            this.playerShowing = true;
+          }
           break;
         case "volume-btn":
           break;

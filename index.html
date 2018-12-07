@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="src/css/simple-grid.css">
     <link rel="stylesheet" href="src/css/custom.css">
+    <link rel="stylesheet" href="src/css/jqkeyboard.css">
     <link rel="stylesheet" href="src/css/wheels.css">
     <title>Assignment 3</title>
   </head>
@@ -15,9 +16,12 @@
   </body>
   <script src="/dist/build.js"></script>
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="src/js/jqkeyboard.js"></script>
+  
   <script src="src/js/propeller.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script>
     $('#rotatingWheel').propeller({inertia: 0, speed: 0});
+    $('#navigationInput').initKeypad()
   </script>
 </html>
